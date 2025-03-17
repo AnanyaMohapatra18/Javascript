@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// altKey
+
+   // "Alt" key was pressed when the event was triggered.
+   // true if the Alt key is pressed, otherwise false
+
+   /**  document.addEventListener("keydown", function (event) {
+    if (event.altKey) {
+        console.log("Alt key is pressed!");
+    }
+});
+**/
+
+
+// ctrlKey
+
+   //  "Ctrl" key was pressed when the event occurred.
+   // true if Ctrl is pressed, otherwise false
+
+   /** document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey) {
+        console.log("Ctrl key is pressed!");
+    }
+});
+**/
+
+
+// shiftKey
+
+   // "Shift" key was pressed during the event.
+   // true if Shift is pressed, otherwise false.
+
+   /** document.addEventListener("keydown", function (event) {
+    if (event.shiftKey) {
+        console.log("Shift key is pressed!");
+    }
+});
+**/
+
+
+// keyCode
+
+   // A numeric property that represents the key's unique code(e.g., 13 for Enter, 65 for "A").
+   // It is deprecated and should be replaced with event.key or event.code.
+
+   /** document.addEventListener("keydown", function (event) {
+    console.log("KeyCode: ", event.keyCode);
+});
+**/
+
+// Alternative to keyCode
+
+  // Use event.key or event.code instead:
+
+  // event.key gives the actual character (e.g., "a", "Enter", "1").
+  // event.code gives the physical key code (e.g., "KeyA", "Enter", "Digit1").
+
+  /** document.addEventListener("keydown", function (event) {
+    console.log("Key pressed: ", event.key);
+    console.log("Key code: ", event.code);
+});
+**/
+
+    </script>
+</body>
+</html>
