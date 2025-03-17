@@ -34,7 +34,8 @@
     
     // 1st approach
 
-    //Writing onclick="" in an html tag itself  for a click event may not be a very good approach when the scale is large.
+    /**Writing onclick="" in an html tag itself  for a click event may not be a very good approach when the 
+    scale is large, Not give much information and have less features.
     // It is not recommended
 
 
@@ -74,42 +75,50 @@
 
  // topics should be studied about the below event object's topic
 
-// type, timestamp, defaultPrevented, target, toElement , srcElement, currentTarget, clientX, clientY, screenX, ScreenY 
-
+/** type, timestamp, defaultPrevented, target, toElement , srcElement, currentTarget, clientX, clientY, screenX, ScreenY 
+    altKey , ctrlKey , shiftKey , keyCode **/
 // e.type
 
 console.log(e.type); // click
 // It returns the result as a string and the result would be the type of event.
 
+     
 // e.timestamp
 console.log(e.timeStamp); // 1423.45444 (in milli second)
 
- // The timeStamp event property returns the number of milliseconds from when the document was finished loading until the specific event was created.
-    // Not all systems provide this information, therefore, timeStamp may be not available for all systems/events.
+ /** The timeStamp event property returns the number of milliseconds from when the document was finished loading until the 
+  specific event was created.**/
+// Not all systems provide this information, therefore, timeStamp may be not available for all systems/events.
 
-    // defaultPrevented
+     
+// defaultPrevented
 
     // The defaultPrevented event property checks whether the preventDefault() method was called for the event.
     // as we know the preventDefault() method holds the value 
 
-    // target
+     
+// target
 
     console.log(e.target);
 
     // The target property returns the element where the event occurred.
 
-    // toElement
-      console.log(e.toElement());
-    // It's a property of the event object (e) that retrieves a reference to the element that the mouse pointer entered during specific mouse events.
+   
+// toElement
+     
+     console.log(e.toElement());
+     // It's a property of the event object (e) that retrieves a reference to the element that the mouse pointer entered 
+     // during specific mouse events.
 
 
-    // currentTarget
+ // currentTarget
     
       console.log(e.currentTarget);
 
     // the currentTarget property returns the element whose event listener triggered the event.
 
-    // clientX
+     
+// clientX
 
      console.log(e.clientX);
 
@@ -117,7 +126,7 @@ console.log(e.timeStamp); // 1423.45444 (in milli second)
     // It only shows the value if the gets clicked in the client Area.
     // The client area is the current targeted (event occurring) window.
 
-    // clientY
+// clientY
 
      console.log(e.clientY);
 
@@ -126,18 +135,20 @@ console.log(e.timeStamp); // 1423.45444 (in milli second)
     // The client area is the current targeted (event occurring) window.
 
 
-    // screenX
+// screenX
      console.log(e.screenX);
 
     //The screenX property returns the x (horizontal) coordinate of a window, relative to the screen.
 
-    //screenY
+    
+//screenY
 
       console.log(e.screenY);
 
      //The screenY property returns the y (vertical) coordinate of a window, relative to the screen.
 
-     // EVENT PROPAGATION
+     
+// EVENT PROPAGATION
      
     // Event propagation is a mechanism that defines how events propagate or travel through the DOM tree to arrive at its target and what happens to it afterward.
 
@@ -151,8 +162,6 @@ console.log(e.timeStamp); // 1423.45444 (in milli second)
     // No 3rd parameters also refer to false by default.
     
     // example
-    
-
     
     document.getElementById("owl").addEventListener("click", (e)=> {
          console.log("owl is clicked ")
@@ -173,7 +182,9 @@ console.log(e.timeStamp); // 1423.45444 (in milli second)
     // It travels bottom to top in dom tree
     // It is called as event bubbling.
 
+     
     // 2. Event capturing
+    // Capturing mode (default true)
     // It first captures  the outermost element and propagates to the inner elements.
     // It travels from top to bottom or from parents to children.
     // with the true parameter mentioned
