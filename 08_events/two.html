@@ -20,7 +20,8 @@
    </div>
    </body>
    <script>
-    // So how can we remove the image if it gets clicked
+       
+// So how can we remove the image if it gets clicked
     
    
     document.getElementById("images").addEventListener("click",(e)=> {
@@ -28,7 +29,8 @@
         const removeingTheparent = e.target.parentNode
          removeingTheparent.remove()
 
-        //There is another because if there are multiple types of HTML tags are being children of one parent node
+//There is another because if there are multiple types of HTML tags are being children of one parent node
+// It is a little bit of confusing
         removeingTheparent.parentNode.removeChild(removeingTheparent)
     })
   
@@ -44,7 +46,7 @@
             let removeingTheparent = e.target.parentNode
          removeingTheparent.remove()
         }
-        // Now if we click on images they will be deleted but if we click the Google's link then it will not get deleted.
+ // Now if we click on images they will be deleted but if we click the Google's link then it will not get deleted.
     })
 </script>
 </html>
