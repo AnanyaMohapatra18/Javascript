@@ -12,12 +12,12 @@
     <button id="stop2">Stop Here</button>
 </body>
 <script>
-  // For generating the random hexcoed for background color.
+  // For generating the random hexcode for background color.
 
     const randomColor = ()=>{
         const hexCodes = "0123456789ABCDEF"
         let color = "#"
-        for( let i = 0; i < 6; i++){
+        for( let i = 0; i < 10; i++){
             color += hexCodes[Math.floor(Math.random() * 16)]
         }  
          return color
