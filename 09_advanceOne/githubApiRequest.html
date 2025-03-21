@@ -77,7 +77,7 @@
     const button = document.querySelector(".btn")
      const follow2 = document.querySelector(".paragraph2")
     const xhr = new XMLHttpRequest()
-    const reqApi = "https://api.github.com/users/Sivasish48"
+    const reqApi = "https://api.github.com/users/AnanyaMohapatra18"
 
     xhr.open("GET",reqApi)
     
@@ -91,7 +91,7 @@
           // console.log(jsonData);
           // console.log(typeof jsonData);
           // console.log(jsonData.followers);
-          image.src = "https://avatars.githubusercontent.com/u/98220976?v=4"
+          image.src = "https://avatars.githubusercontent.com/u/195440349?s=400&v=4"
           userName.textContent = `Username : ${jsonData.login}`
           follow.textContent = `Following : ${jsonData.following}`
           follow2.textContent = ` Followers : ${jsonData.followers}`
