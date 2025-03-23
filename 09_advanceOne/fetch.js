@@ -2,14 +2,15 @@
 
 // In JavaScript, the fetch() method is used to request data from a server. 
 
-// It provides a more efficient and powerful way to retrieve data from servers compared to older techniques, such as the XMLHTTPRequest()
+// It provides a more efficient and powerful way to retrieve data from servers compared 
+// to older techniques, such as the XMLHTTPRequest()
 
 // The request can be of any type of API that returns the data in JSON or XML.
 
 // Example
 
 
-const fetchEx = async ()=>{
+const fetchEx1 = async ()=>{
     const fetchRes = await fetch("https://api.github.com/users/AnanyaMohapatra18")
    
     const data = fetchRes.json()
@@ -20,7 +21,7 @@ const fetchEx = async ()=>{
    // Promise { <pending> }
    
    
-   const fetchEx = async ()=>{
+   const fetchEx2 = async ()=>{
        try {
           
            const fetchRes = await fetch("https://api.github.com/users/AnanyaMohapatra18")
