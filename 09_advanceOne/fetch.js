@@ -74,5 +74,16 @@ const fetchEx1 = async ()=>{
    })
    
    // It does return the json object
+
+
+/** The fetch() function will reject the promise on some errors, but not if the server responds with an error 
+ status like 404: so we also check the response status and throw if it is not OK.
+
+Otherwise, we fetch the response body content as JSON by calling the json() method of Response, and log one of
+its values. Note that like fetch() itself, json() is asynchronous, as are all the other methods to access the 
+response body content.
+ **/
    
    
+
+// READ MDN DOCUMENTATION FOR MORE INFORMATION
